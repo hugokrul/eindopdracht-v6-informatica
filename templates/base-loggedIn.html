@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_links.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <nav>
+        <!-- making a non-numbered list for the navigationbar -->
+        <ul class="navigator">
+            <!-- making list items -->
+            <li><a href="/index_home.html">Home</a></li>
+            <li><a href="/ghb.html"></a></li>
+            <li class="name"><a class="non" href="/index_account.html">Jouw account</a></li>
+            <li class="name"><a class="non" id="cart" href="/index_winkelmand.html"><ion-icon name="basket-outline"></ion-icon> Winkelmandje <span>0</span></a></li>
+        </ul>
+    </nav>
+    
+    
+    {% block body %}
+    {% endblock %}
+</body>
+</html>

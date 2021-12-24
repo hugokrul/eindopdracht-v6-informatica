@@ -1,0 +1,29 @@
+{% extends 'base-loggedIn.html' %}
+
+{% block head %}
+<title>Jouw account</title>
+{% endblock %}
+
+
+{% block body %}
+<div class="hero-image"> 
+    <header>
+        <!-- the text in the image -->
+        <div class="hero-text">
+            <!-- making the tekst in the middle -->
+            <h1 style="font-size:50px">Hi {{ name }}</h1>
+            <li class="sites1"><a href="index_update-password.html">Wachtwoord veranderen</a></li>
+            <li class="sites2"><a href="index_update-username.html">Gebruikersnaam veranderen</a></li>
+            <li class="sites3"><a href="index_log-out.html">Uitloggen<br></a></li>
+        </div>
+    </header> 
+    <div class="info">
+        <p>Email: {{ email }}</p>
+        <p>Postcode: {{ postcode }}</p>
+    </div>
+</div>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+{% endblock %}

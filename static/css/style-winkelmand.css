@@ -1,0 +1,135 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/achtergrond.jpg");
+    min-height: 100vh;
+    padding: 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* De producten in het winkelmandje */
+.products-container {
+    position: absolute;
+    justify-content: space-around;
+    left: 12.5%;
+    margin: 0 auto;
+    margin-top: 100px;
+    color: white;
+    width: 75%;
+}
+
+/* Het toevoegknopje in het winkelmandje */
+.products-container ion-icon {
+    font-size: 25px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Alleen de naam van wat er staat */
+.product-header {
+    width: 100%;
+    font-size: 4vh;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+}
+
+/* De titel van het product aan de bovenkant */
+.product-title {
+    width: 55%;
+}
+
+/* De prijs van het product aan de bovenkant */
+.price {
+    width: 15%;
+    display: flex;
+   align-items: center;
+}
+
+/* De hoeveelheid van het product aan de bovenkant */
+.quantity {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+/* Hoeveel het totaal kost aan de bovenkant */
+.total {
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+/* De verschillende producten */
+.products {
+    position: absolute;
+    left: 0px;
+    top: 5vh;
+    font-size: 4vh;
+    width: 100%;
+    display: inline;
+    float: left;
+    overflow-x: auto;
+}
+
+/* De lijn onder elk product */
+.product-inTotal {
+    border-bottom: 1px solid lightgray;
+}
+
+/* De prijs van het individuele product */
+.product-price {
+    position: absolute;
+    margin-left: 50%;
+    padding-top: 0;
+}
+
+/* De totale prijs */
+.totalPrice {
+    position: absolute;
+    margin-left: 90%;
+}
+
+/* Hoeveel totale producten er zijn */
+.product-quantity {
+    position: absolute;
+    margin-left: 65%;
+}
+
+/* Het totale mandje */
+.basketTotal {
+    position: absolute;
+    margin-left: 90%;
+}
+
+/* De knop alles verwijderen */
+.verwijderAlles {
+    border-top: 2px solid lightgray;
+    width: 25%;
+}
+
+/* Als je over de verwijder knop hovert */
+.verwijderAlles:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* Het afrekenknopje hoveren */
+.afrekenen:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* Het individuele verwijder knopje */
+.verwijderKnop:hover {
+    opacity: 0.7;
+}
+
+/* Als er geen producten zijn */
+.geenProducten {
+    cursor: pointer;
+}

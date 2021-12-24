@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Aanmeld pagina</title>
+{% endblock %}
+
+
+{% block body %}
+<!-- the picture and the text on a header -->
+<div class="hero-image">
+    <header>
+        <!-- the text in the image -->
+        <div class="hero-text-sign_up">
+            <h1 style="font-size:50px">AANMELDEN</h1 class="hero-text-h1">
+            <font style="font-size:inherit">Scroll naar beneden!</font>
+            <br>
+            <font style="font-size:inherit; color: red;">{{ error }}</font>
+        </div>
+    </header>
+</div>
+
+<!-- the sign up form -->
+<div class="sign-up">
+    <!-- creating a form without autocomplete -->
+    <form autocomplete="off" method="POST">
+        <!-- label and input for the username -->
+        <label for="userNameSignup">Voer je gebruikersnaam in</label>
+        <input type="text" name="userNameSignup" placeholder="Jouw gebruikersnaam.." id="userNameSignup"/>
+
+        <!-- label and input for the password -->
+        <label for="passwordSignup">Voer je wachtwoord in</label>
+        <input type="password" name="passwordSignup" placeholder="Jouw wachtwoord.." id="passwordSignup"/>
+
+        <label for="passwordSignupCheck">Voer je wachtwoord opnieuw in</label>
+        <input type="password" name="passwordSignupCheck" placeholder="Jouw wachtwoord" id="passwordSignupCheck"/>
+
+
+        <!-- label and input for the email adress -->
+        <label for="email">Voer je email in</label>
+        <input type="text" name="email" placeholder="Voorbeeld: user@company.com" id="email"/>
+
+        <label for="postcode">Voer je postcode in</label>
+        <input type="text" name="postcode" placeholder="Voorbeeld: 1234AB" id="postcode"/>
+        
+        <label for="adres">Voer je adres in</label>
+        <input type="text" name="adres" placeholder="Voorbeeld: straat 10" id="adres"/>
+
+        <!-- refering to a function in script.js -->
+        <input type="submit" value="Sign up"/>
+    </form>
+</div>
+
+{% endblock %}

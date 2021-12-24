@@ -1,0 +1,628 @@
+{% extends 'base-loggedIn.html' %}
+
+{% block head %}
+<title>Home</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style-home.css') }}">
+{% endblock %}
+
+
+{% block body %}
+<body>
+    <div class="hero-image">
+        <div id='boxes' class="top-left1"><p style="cursor: pointer;" onclick="showDiv('#pop-up-div1')">J-Rock</p></div>
+        <div id='boxes' class="top-left2"><p style="cursor: pointer;" onclick="showDiv('#pop-up-div2')">J-Pop</p></div>
+        <div id='boxes' class="top-left3"><p style="cursor: pointer;" onclick="showDiv('#pop-up-div3')">K-Pop</p></div>
+        <div id='boxes' class="bottom-left1"><p style="cursor: pointer;" onclick="showDiv('#pop-up-div7')">Modern Klassiek</p></div>
+        <div id='boxes' class="bottom-left2"><p style="cursor: pointer;" onclick="showDiv('#pop-up-div8')">Symfonie</p></div>
+        <div id='boxes' class="bottom-left3"><p style="cursor: pointer;" onclick="showDiv('#pop-up-div9')">Klassieke Piano</p></div>
+
+        <div id='border' class="line-top"></div>
+        <div id='border' class="top-left1-border"></div>
+        <div id='border' class="top-left2-border"></div>
+        <div id='border' class="top-left3-border"></div>
+        <div id='border' class="top-right1-border"></div>
+        <div id='border' class="top-right2-border"></div>
+        <div id='border' class="top-right3-border"></div>
+        
+        <div id='border' class="line-bottom"></div>
+        <div id='border' class="bottom-left1-border"></div>
+        <div id='border' class="bottom-left2-border"></div>
+        <div id='border' class="bottom-left3-border"></div>
+        <div id='border' class="bottom-right1-border"></div>
+        <div id='border' class="bottom-right2-border"></div>
+        <div id='border' class="bottom-right3-border"></div>
+
+        <div id='boxes' class="midden-beneden">
+            <p>Begane grond</p>
+        </div>
+        <div id='boxes' class="heel-midden"></div>
+
+        <div id='boxes' class="top-right3"><p style="cursor: pointer;" onclick="showDiv('#pop-up-div4')">Hardrock</p></div>
+        <div id='boxes' class="top-right2"><p style="cursor: pointer;" onclick="showDiv('#pop-up-div5')">Rock 'n Roll</p></div>
+        <div id='boxes' class="top-right1"><p style="cursor: pointer;" onclick="showDiv('#pop-up-div6')">Heavy Metal</p></div>
+        <div id='boxes' class="bottom-right3"><p style="cursor: pointer;" onclick="showDiv('#pop-up-div10')">House</p></div>
+        <div id='boxes' class="bottom-right2"><p style="cursor: pointer;" onclick="showDiv('#pop-up-div11')">Gabber</p></div>
+        <div id='boxes' class="bottom-right1"><p style="cursor: pointer;" onclick="showDiv('#pop-up-div12')">EDM</p></div>
+
+        
+        <div id='guy'>
+            <img src="{{ url_for('static', filename='images/guy.png') }}">
+        </div>
+    </div>
+
+    <div id="pop-up-div-welkom" class="pop-ups">
+        <span class="helper"></span>
+        <div>
+            <div class="popupCloseButton">&times;</div>
+            <div class="text">
+                <h1>Welkom! </h1>
+                <p><br />- Beweeg met de pijltjes om te lopen. </p>
+                <p><br />- Stap in een van de schappen om een lijst met platen van die genre te vinden.</p>
+                <p><br />- Klik op het winkelmandje om naar je winkelmandje te gaan of platen in hetwinkelmandje te stoppen.</p>
+                <p><br />- Klik rechts bovenin op het kruisje om deze schermen af te sluiten. </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="pops">
+        <div id="pop-up-div1" class="pop-ups">
+            <span class="helper"></span>
+            <div>
+                <div class="popupCloseButton">&times;</div>
+                <h1>J-Rock</h1>
+                <div class="container">
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/JRock/AcidBlackCherryBlackList.jpg') }}">
+                        <h3>Acid Black Cherry - Black List</h3>
+                        <h3>€ 51</h3>
+                        <a  class="add-cart" id="kp0">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/JRock/AcidBlackCherryQED.jpg') }}">
+                        <h3>Acid Black Cherry - Q.E.D</h3>
+                        <h3>€ 44</h3>
+                        <a  class="add-cart" id="kp1">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/JRock/CoShuNieOverkill.jpg') }}">
+                        <h3>Cö Shu Nie - Overkill</h3>
+                        <h3>€ 39</h3>
+                        <a  class="add-cart" id="kp2">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/JRock/CoShuNiePure.jpg') }}">
+                        <h3>Cö Shu Nie - Pure</h3>
+                        <h3>€ 25</h3>
+                        <a  class="add-cart" id="kp3">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/JRock/JAMProjectAreaZ.jpg') }}">
+                        <h3>JAM Project - Area Z</h3>
+                        <h3>€ 40</h3>
+                        <a  class="add-cart" id="kp4">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/JRock/PornoGraffitiKumoOMoTsukamuTami.jpg') }}">
+                        <h3>Porno Graffiti - 雲をも掴む民</h3>
+                        <h3>€ 40</h3>
+                        <a  class="add-cart" id="kp5">Voeg toe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="pop-up-div2" class="pop-ups">
+            <span class="helper"></span>
+            <div>
+                <div class="popupCloseButton">&times;</div>
+                <h1>J-Pop</h1>
+                <div class="container">
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/JPop/MikiMatsubaraThePremiumBest.jpg') }}">
+                        <h3>Miki Matsubara / The Best Premium</h3>
+                        <h3>€ 26</h3>
+                        <a  class="add-cart" id="kp6">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/JPop/MikiMatsubaraBestCollection.jpg') }}">
+                        <h3>Miki Matsubara / Best Collection</h3>
+                        <h3>€ 93</h3>
+                        <a  class="add-cart" id="kp7">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/JPop/AyumiHamasakiLOVEppears.jpg') }}">
+                        <h3>Ayumi Hamasaki - LOVEppears</h3>
+                        <h3>€ 33</h3>
+                        <a  class="add-cart" id="kp8">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/JPop/AyumiHamasakiTROUBLE.jpg') }}">
+                        <h3>Ayumi Hamasaki - TROUBLE</h3>
+                        <h3>€ 38</h3>
+                        <a  class="add-cart" id="kp9">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/JPop/KATTUNKusabiKusabi.jpg') }}">
+                        <h3>Kat-Tun - Kusabi Kusabi</h3>
+                        <h3>€ 14</h3>
+                        <a  class="add-cart" id="kp10">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/JPop/KatTunBreakTheRecordsByYouFor.jpg') }}">
+                        <h3>Kat-Tun - Break The Records</h3>
+                        <h3>€ 38</h3>
+                        <a  class="add-cart" id="kp11">Voeg toe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pop-up-div3" class="pop-ups">
+            <span class="helper"></span>
+            <div>
+                <div class="popupCloseButton">&times;</div>
+                <h1>K-Pop</h1>
+                <div class="container">
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/KPop/BTSWings.jpg') }}">
+                        <h3>BTS - Wings</h3>
+                        <h3>€ 28</h3>
+                        <a  class="add-cart" id="kp12">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/KPop/BTSFaceYourself.jpg') }}">
+                        <h3>BTS - Face Yourself</h3>
+                        <h3>€ 42</h3>
+                        <a  class="add-cart" id="kp13">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/KPop/PSYSummerStandConcert.jpg') }}">
+                        <h3>PSY - Summer Stand Concert</h3>
+                        <h3>€ 46</h3>
+                        <a  class="add-cart" id="kp14">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/KPop/Seventeen24H.jpg') }}">
+                        <h3>Seventeen - 24H</h3>
+                        <h3>€ 34</h3>
+                        <a  class="add-cart" id="kp15">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/KPop/SeventeenAttaca.jpg') }}">
+                        <h3>Seventeen - Attaca</h3>
+                        <h3>€ 30</h3>
+                        <a  class="add-cart" id="kp16">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/KPop/GirlsGenerationPaparazzi.jpg') }}">
+                        <h3>Girls' Generation - Paparazzi</h3>
+                        <h3>€ 20</h3>
+                        <a  class="add-cart" id="kp17">Voeg toe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pop-up-div4" class="pop-ups">
+            <span class="helper"></span>
+            <div>
+                <div class="popupCloseButton">&times;</div>
+                <h1>Hardrock</h1>
+                <div class="container">
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/Hardrock/DeepPurpleTurningCrime.jpg') }}">
+                        <h3>Deep Purple - Turning to Crime</h3>
+                        <h3>€ 36</h3>
+                        <a  class="add-cart" id="kp18">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/Hardrock/AcDcHighwayToHell.jpg') }}">
+                        <h3>AC/DC - Highway To Hell</h3>
+                        <h3>€ 23</h3>
+                        <a  class="add-cart" id="kp19">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/Hardrock/AcDcBackInBlack.jpg') }}">
+                        <h3>AC/DC - Back In Black</h3>
+                        <h3>€ 21</h3>
+                        <a  class="add-cart" id="kp20">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/Hardrock/GunsNRosesAppetiteFor.jpg') }}">
+                        <h3>Guns 'N Roses - Appetite for Destruction</h3>
+                        <h3>€ 28</h3>
+                        <a  class="add-cart" id="kp21">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/Hardrock/KissDestroyer.jpg') }}">
+                        <h3>Kiss - Destroyer</h3>
+                        <h3>€ 40</h3>
+                        <a  class="add-cart" id="kp22">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/Hardrock/KissCarnivalOfSouls.jpg') }}">
+                        <h3>Kiss - Carnival Of Souls</h3>
+                        <h3>€ 29</h3>
+                        <a  class="add-cart" id="kp23">Voeg toe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pop-up-div5" class="pop-ups">
+            <span class="helper"></span>
+            <div>
+                <div class="popupCloseButton">&times;</div>
+                <h1>Rock 'n Roll</h1>
+                <div class="container">
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/RockNRoll/ElvisPresleyThatsTheWayItIs.jpg') }}">
+                        <h3>Elvis Presley - That's The Way It Is</h3>
+                        <h3>€ 54</h3>
+                        <a  class="add-cart" id="kp24">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/RockNRoll/ElvisPresleyMerryChristmasBaby.jpg') }}">
+                        <h3>Elvis Presley - Merry Christmas Baby</h3>
+                        <h3>€ 23</h3>
+                        <a  class="add-cart" id="kp25">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/RockNRoll/ChuckBerryGreatestHits.jpg') }}">
+                        <h3>Chuck Berry - Greatest Hits</h3>
+                        <h3>€ 19</h3>
+                        <a  class="add-cart" id="kp26">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/RockNRoll/ChuckBerryJohnnyBGoode.jpg') }}">
+                        <h3>Chuck Berry - Johnny B. Goode</h3>
+                        <h3>€ 16</h3>
+                        <a  class="add-cart" id="kp27">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/RockNRoll/BeachBoysBeachBoys.jpg') }}">
+                        <h3>Beach Boys - Beach Boys</h3>
+                        <h3>€ 38</h3>
+                        <a  class="add-cart" id="kp28">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/RockNRoll/BeachBoysGreatestSurfHits.jpg') }}">
+                        <h3>Beach Boys - Greatest Surf Hits</h3>
+                        <h3>€ 19</h3>
+                        <a  class="add-cart" id="kp29">Voeg toe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="pop-up-div6" class="pop-ups">
+            <span class="helper"></span>
+            <div>
+                <div class="popupCloseButton">&times;</div>
+                <h1>Heavy Metal</h1>
+                <div class="container">
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/HeavyMetal/IronMaidenSomewhereInTime.jpg') }}">
+                        <h3>Iron Maiden - Somewhere In Time</h3>
+                        <h3>€ 23</h3>
+                        <a  class="add-cart" id="kp30">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/HeavyMetal/IronMaidenFearOfTheDark.jpg') }}">
+                        <h3>Iron Maiden - Fear Of The Dark</h3>
+                        <h3>€ 42</h3>
+                        <a  class="add-cart" id="kp31">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/HeavyMetal/BlackSabbathMasterOfReality.jpg') }}">
+                        <h3>Black Sabbath - Master Of Reality</h3>
+                        <h3>€ 13</h3>
+                        <a  class="add-cart" id="kp32">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/HeavyMetal/BlackSabbathDehumanizer.jpg') }}">
+                        <h3>Black Sabbath - Dehumanizer</h3>
+                        <h3>€ 33</h3>
+                        <a  class="add-cart" id="kp33">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/HeavyMetal/JudasPriestPainkiller.jpg') }}">
+                        <h3>Judas Priest - Painkiller</h3>
+                        <h3>€ 25</h3>
+                        <a  class="add-cart" id="kp34">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/HeavyMetal/JudasPriestKillingMachine.jpg') }}">
+                        <h3>Judas Priest - Killing Machine</h3>
+                        <h3>€ 28</h3>
+                        <a  class="add-cart" id="kp35">Voeg toe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="pop-up-div7" class="pop-ups">
+            <span class="helper"></span>
+            <div>
+                <div class="popupCloseButton">&times;</div>
+                <h1>Modern Klassiek</h1>
+                <div class="container">
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/ModernKlassiek/JohnAdamsCloudsOfForgetting.jpg') }}">
+                        <h3>John Adams - Clouds Of Forgetting</h3>
+                        <h3>€ 25</h3>
+                        <a  class="add-cart" id="kp36">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/ModernKlassiek/ArmandAmarLeylaEtMajnun.jpg') }}">
+                        <h3>Armand Amar- Leyla Et Majnun</h3>
+                        <h3>€ 24</h3>
+                        <a  class="add-cart" id="kp37">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/ModernKlassiek/DavidBedfordGreatEquatorial.jpg') }}">
+                        <h3>David Bedford - Great Equatorial</h3>
+                        <h3>€ 14</h3>
+                        <a  class="add-cart" id="kp38">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/ModernKlassiek/JohnCageAtlasEclipticalisWithW.jpg') }}">
+                        <h3>John Cage - Atlas Eclipticalis With W</h3>
+                        <h3>€ 54</h3>
+                        <a  class="add-cart" id="kp39">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/ModernKlassiek/GlennBrancaSymphonyNo5.jpg') }}">
+                        <h3>Glenn Branca - Symphony No.5</h3>
+                        <h3>€ 20</h3>
+                        <a  class="add-cart" id="kp40">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/ModernKlassiek/ElliotCarterEddition9.jpg') }}">
+                        <h3>E. Carter - Elliott Carter Edition 9</h3>
+                        <h3>€ 20</h3>
+                        <a  class="add-cart" id="kp41">Voeg toe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="pop-up-div8" class="pop-ups">
+            <span class="helper"></span>
+            <div>
+                <div class="popupCloseButton">&times;</div>
+                <h1>Symfonie</h1>
+                <div class="container">
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/symfonie/BeethovenSymphonieNr9.jpg') }}">
+                        <h3>Beethoven - Symfonie nr9</h3>
+                        <h3>€ 23</h3>
+                        <a  class="add-cart" id="kp42">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/symfonie/BratislavaSymfonieSonata.jpg') }}">
+                        <h3>Bratislava - Symfonieën en Sonaten</h3>
+                        <h3>€ 33</h3>
+                        <a  class="add-cart" id="kp43">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/symfonie/TchaikovskySymfonieNo6.jpg') }}">
+                        <h3>Tchaikovski - Symfonie No. 6</h3>
+                        <h3>€ 24</h3>
+                        <a  class="add-cart" id="kp44">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/symfonie/shostakovichSymfonie7Stalingrad.jpg') }}">
+                        <h3>Shostakovich - Symfonie no7 Leningrad</h3>
+                        <h3>€ 16</h3>
+                        <a  class="add-cart" id="kp45">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/symfonie/ParadiseLostSymfonieForTheLost.jpg') }}">
+                        <h3>Paradise Lost - Symfonie for the Lost</h3>
+                        <h3>€ 25</h3>
+                        <a  class="add-cart" id="kp46">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/symfonie/BeethovenSymphonieNr9Dminor.jpg') }}">
+                        <h3>Beethoven - Symfonie nr. 9 in Dminor</h3>
+                        <h3>€ 23</h3>
+                        <a  class="add-cart" id="kp47">Voeg toe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="pop-up-div9" class="pop-ups">
+            <span class="helper"></span>
+            <div>
+                <div class="popupCloseButton">&times;</div>
+                <h1>Klassieke Piano</h1>
+                <div class="container">
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/klassiekePiano/F.Chopin-SonataOp65.jpg') }}">
+                        <h3>F. Chopin - Sonata Op.65</h3>
+                        <h3>€ 52</h3>
+                        <a  class="add-cart" id="kp48">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/klassiekePiano/E.Satie-Vexations.jpg') }}">
+                        <h3>E. Satie - Vexations</h3>
+                        <h3>€ 30</h3>
+                        <a  class="add-cart" id="kp49">Voeg toe</a>
+                    </div>   
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/klassiekePiano/J.Beving-Trilogy.jpg') }}">
+                        <h3>Joep Beving - Trilogy -ltd/box Set-</h3>
+                        <h3>€ 291</h3>
+                        <a  class="add-cart" id="kp50">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/klassiekePiano/J.Beving-Conatus.jpg') }}">
+                        <h3>Joep Beving - Conatus</h3>
+                        <h3>€ 48</h3>
+                        <a  class="add-cart" id="kp51">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/klassiekePiano/J.Beving-Solipsism.jpg') }}">
+                        <h3>Joep Beving - Solipsism -ltd-</h3>
+                        <h3>€ 33</h3>
+                        <a  class="add-cart" id="kp52">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/klassiekePiano/Yiruma-rewrittenMemories.jpg') }}">
+                        <h3>Yiruma - Rewritten Memories</h3>
+                        <h3>€ 37</h3>
+                        <a  class="add-cart" id="kp53">Voeg toe</a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <div id="pop-up-div10" class="pop-ups">
+            <span class="helper"></span>
+            <div>
+                <div class="popupCloseButton">&times;</div>
+                <h1>House</h1>
+                <div class="container">
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/house/DaftPunkHomework.jpg') }}">
+                        <h3>Daft Punk - Homework</h3>
+                        <h3>€ 17</h3>
+                        <a  class="add-cart" id="kp54">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/house/JohnTalabotFin.jpg') }}">
+                        <h3>John Talabot - Fin</h3>
+                        <h3>€ 19</h3>
+                        <a  class="add-cart" id="kp55">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/house/DoctorRockitBodilyFunctions.jpg') }}">
+                        <h3>Doctor Rockit - Bodily Functions</h3>
+                        <h3>€ 24</h3>
+                        <a  class="add-cart" id="kp56">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/house/NicolasJaarSpaceIsOnlyNoice.jpg') }}">
+                        <h3>Nicolas Jaar - Space Is Only Noice..</h3>
+                        <h3>€ 23</h3>
+                        <a  class="add-cart" id="kp57">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/house/DaftPunkDiscovery.jpg') }}">
+                        <h3>Daft Punk - Discovery</h3>
+                        <h3>€ 28</h3>
+                        <a  class="add-cart" id="kp58">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/producten/house/CircleHenki.jpg') }}">
+                        <h3>Richard Dawson & Circle - Henksi</h3>
+                        <h3>€ 28</h3>
+                        <a  class="add-cart" id="kp59">Voeg toe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="pop-up-div11" class="pop-ups">
+            <span class="helper"></span>
+            <div>
+                <div class="popupCloseButton">&times;</div>
+                <h1>Gabber</h1>
+                <div class="container">
+                    <div class="image">
+                        <img width="300" height="300" src="{{ url_for('static', filename='images/producten/gabber/JS666II.jpg') }}">
+                        <h3>JS666 - II</h3>
+                        <h3>€ 40</h3>
+                        <a  class="add-cart" id="kp60">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img width="300" height="300" src="{{ url_for('static', filename='images/producten/gabber/NasenblutenWeveGotTheBalls.jpg') }}">
+                        <h3>Nasenbluten - We've Got The Balls</h3>
+                        <h3>€ 31</h3>
+                        <a  class="add-cart" id="kp61">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img width="300" height="300" src="{{ url_for('static', filename='images/producten/gabber/NasenblutenIllMakeThemPay.jpg') }}">
+                        <h3>Nasenbluten - I'll Make Them Pay</h3>
+                        <h3>€ 28</h3>
+                        <a  class="add-cart" id="kp62">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img width="300" height="300" src="{{ url_for('static', filename='images/producten/gabber/OphidianBlackbox.jpg') }}">
+                        <h3>Ophidium - Blackbox</h3>
+                        <h3>€ 50</h3>
+                        <a  class="add-cart" id="kp63">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img width="300" height="300" src="{{ url_for('static', filename='images/producten/gabber/HollsauVain.jpg') }}">
+                        <h3>Hellsau - Vain</h3>
+                        <h3>€ 25</h3>
+                        <a  class="add-cart" id="kp64">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img width="300" height="300" src="{{ url_for('static', filename='images/producten/gabber/NasenblutenYoureGoingToDie.jpg') }}">
+                        <h3>Nasenbluten - You're Going To Die</h3>
+                        <h3>€ 17</h3>
+                        <a  class="add-cart" id="kp65">Voeg toe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="pop-up-div12" class="pop-ups">
+            <span class="helper"></span>
+            <div>
+                <div class="popupCloseButton">&times;</div>
+                <h1>EDM</h1>
+                <div class="container">
+                    <div class="image">
+                        <img width="300" height="300" src="{{ url_for('static', filename='images/producten/EDM/k3TeleRomeo.jpg') }}">
+                        <h3>K3 - Tele Romeo</h3>
+                        <h3>€ 30</h3>
+                        <a  class="add-cart" id="kp66">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img width="300" height="300" src="{{ url_for('static', filename='images/producten/EDM/k3AlleKleuren.jpg') }}">
+                        <h3>K3 - Alle Kleuren</h3>
+                        <h3>€ 31</h3>
+                        <a  class="add-cart" id="kp67">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img width="300" height="300" src="{{ url_for('static', filename='images/producten/EDM/TheMartinGarrixCollection.jpg') }}">
+                        <h3>The Martin Garrix Collection</h3>
+                        <h3>€ 23</h3>
+                        <a  class="add-cart" id="kp68">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img width="300" height="300" src="{{ url_for('static', filename='images/producten/EDM/AviciiStories.jpg') }}">
+                        <h3>Avicii - Stories</h3>
+                        <h3>€ 10</h3>
+                        <a  class="add-cart" id="kp69">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img width="300" height="300" src="{{ url_for('static', filename='images/producten/EDM/AviciiTrue.jpg') }}">
+                        <h3>Avicii - True</h3>
+                        <h3>€ 15</h3>
+                        <a  class="add-cart" id="kp70">Voeg toe</a>
+                    </div>
+                    <div class="image">
+                        <img width="300" height="300" src="{{ url_for('static', filename='images/producten/EDM/MartinGarrixMartinGarrixExperience.jpg') }}">
+                        <h3>Martin Garrix - Martin Garrix Experience</h3>
+                        <h3>€ 34</h3>
+                        <a  class="add-cart" id="kp71">Voeg toe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script scr="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script-home.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script-cart.js') }}"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+{% endblock %}

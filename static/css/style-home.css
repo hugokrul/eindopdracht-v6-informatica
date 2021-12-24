@@ -1,0 +1,339 @@
+/* Het stijlen van alle boxes */
+#boxes {
+    width: 12.5%;
+    height: 35%;
+    position: absolute;
+    vertical-align: 50;
+    color: white;
+    z-index: 1;
+}
+
+#boxes p {
+    text-align: center;
+    font-size: 3vh;
+    position: absolute;
+    margin: 0;
+    top: 80%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#boxes.top-left1 {
+    top: 45px;
+}
+  
+#boxes.top-left2 {
+    top: 45px;
+    left: 12.5%;
+}
+
+#boxes.top-left3 {
+    top: 45px;
+    left: 25%;
+}
+
+#boxes.bottom-left1 {
+    bottom: 0px;
+}
+#boxes.bottom-left1 p {
+    top: 20%;
+}
+
+#boxes.bottom-left2 {
+    bottom: 0px;
+    left: 12.5%;
+}
+#boxes.bottom-left2 p {
+    top: 20%;
+}
+
+#boxes.bottom-left3 {
+    bottom: 0px;
+    left: 25%;
+}
+#boxes.bottom-left3 p {
+    top: 20%;
+}
+
+#boxes.top-right1 {
+    top: 45px;
+    right: 0;
+    border-right: 0px;
+}
+
+#boxes.top-right2 {
+    top: 45px;
+    right: 12.5%;
+    border-right: 0px;
+}
+
+#boxes.top-right3 {
+    top: 45px;
+    right: 25%;
+    border-right: 0px;
+}
+
+#boxes.bottom-right1 {
+    bottom: 0px;
+    right: 0;
+    border-right: 0px;
+} 
+#boxes.bottom-right1 p {
+    top: 20%;
+}
+
+#boxes.bottom-right2 {
+    bottom: 0px;
+    right: 12.5%;
+    border-right: 0px;
+} 
+#boxes.bottom-right2 p {
+    top: 20%;
+}
+
+#boxes.bottom-right3 {
+    bottom: 0px;
+    right: 25%;
+    border-right: 0px;
+} 
+#boxes.bottom-right3 p {
+    top: 20%;
+}
+
+#boxes.midden-boven {
+    width: 25%;
+    top: 45px;
+    left: 37.5%;
+    right: 37.5%;
+    border-right: 0px;
+}
+
+#boxes.midden-boven p {
+    top: 45%;
+    width: 100%;
+    font-size: 5vh;
+}
+
+#boxes.midden-beneden {
+    width: 25%;
+    bottom: 0px;
+    left: 37.5%;
+    right: 37.5%;
+    border-right: 0px;
+}
+#boxes.midden-beneden p {
+    top: 45%;
+    width: 100%;
+    font-size: 5vh;
+}
+
+#boxes.heel-midden {
+    border-style: none;
+    top: calc(35% + 45px);
+    height: 24.5%;
+    width: 100%;
+}
+#boxes.heel-midden p {
+    top: 45%;
+    width: 100%;
+    font-size: 5vh;
+}
+
+#boxes.hero-image-contact {
+    width: 100%;
+    border-right: 0px;
+}
+
+#border.line-top {
+    position: absolute;
+    height: 1px;
+    width: 100vw;
+    top: calc(35% + 45px);
+}
+#border.line-bottom {
+    position: absolute;
+    height: 1px;
+    width: 100vw;
+    top: 65%;
+}
+#border.top-left1-border {
+    position: absolute;
+    border: 1px solid white;
+    height: 35%;
+    width: 1px;
+    top: 45px;
+    left: 12.5%;
+}
+#border.top-left2-border {
+    position: absolute;
+    border: 1px solid white;
+    height: 35%;
+    width: 1px;
+    top: 45px;
+    left: 25%;
+}
+#border.top-left3-border {
+    position: absolute;
+    border: 1px solid white;
+    height: 35%;
+    width: 1px;
+    top: 45px;
+    left: 37.5%;
+}
+#border.top-right1-border {
+    position: absolute;
+    border: 1px solid white;
+    height: 35%;
+    width: 1px;
+    top: 45px;
+    left: 62.5%;
+}
+#border.top-right2-border {
+    position: absolute;
+    border: 1px solid white;
+    height: 35%;
+    width: 1px;
+    top: 45px;
+    left: 75%;
+}
+#border.top-right3-border {
+    position: absolute;
+    border: 1px solid white;
+    height: 35%;
+    width: 1px;
+    top: 45px;
+    left: 87.5%;
+}
+#border.bottom-left1-border {
+    position: absolute;
+    border: 1px solid white;
+    height: 35%;
+    width: 1px;
+    bottom: 0px;
+    left: 12.5%;
+}
+#border.bottom-left2-border {
+    position: absolute;
+    border: 1px solid white;
+    height: 35%;
+    width: 1px;
+    bottom: 0px;
+    left: 25%;
+}
+#border.bottom-left3-border {
+    position: absolute;
+    border: 1px solid white;
+    height: 35%;
+    width: 1px;
+    bottom: 0px;
+    left: 37.5%;
+}
+#border.bottom-right1-border {
+    position: absolute;
+    border: 1px solid white;
+    height: 35%;
+    width: 1px;
+    bottom: 0px;
+    left: 62.5%;
+}
+#border.bottom-right2-border {
+    position: absolute;
+    border: 1px solid white;
+    height: 35%;
+    width: 1px;
+    bottom: 0px;
+    left: 75%;
+}
+#border.bottom-right3-border {
+    position: absolute;
+    border: 1px solid white;
+    height: 35%;
+    width: 1px;
+    bottom: 0px;
+    left: 87.5%;
+}
+
+/* Het stijlen van het popettje */
+#guy {
+    position: absolute;
+    border-right: 0;
+    height: 10vh;
+    width: 10vh;
+        /* outline: 1px solid black;
+        background-color: red; */
+    left: 48%;
+    top: 85%;
+    z-index: 0;
+}
+
+#guy img {
+    height: calc(10vh+'2px');
+    width: 10vh;
+}
+
+/* Popup box BEGIN */
+.pop-ups {
+    background:rgba(0,0,0,.4);
+    display:none;
+    height: 100%;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.pop-ups .helper{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+
+.pop-ups > div {
+    top: 15px;
+    background-color: #fff;
+    box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    height: 90%;
+    vertical-align: middle;
+    width: 90%;
+    position: relative;
+    padding: 15px 5%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* Het kruisje om het dicht te doen */
+.popupCloseButton {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    position: fixed;
+    top: 65px;
+    right: 6.5%;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    z-index: 10000;
+}
+
+/* Als je over het kruisje hovert */
+.popupCloseButton:hover {
+    background-color: #ccc;
+}
+
+/* De text om je welkom te heetten */
+.text {
+    font-size: 5vh;
+}
+
+.text p {
+    text-align: left;
+    left: 20px;
+}

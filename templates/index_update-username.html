@@ -1,0 +1,40 @@
+{% extends 'base-update.html' %}
+
+{% block head %}
+<title>Update Username</title>
+{% endblock %}
+
+
+{% block body %}
+<div class="hero-image">
+    <header>
+        <div class="hero-text-login">
+            <h1 style="font-size:50px">CHANGE YOUR USERNAME</h1 class="hero-text-h1">
+            <font style="font-size:inherit">Scroll down!</font>
+            <br>
+            <font style="font-size:inherit; color: red;">{{error}}</font>
+        </div>
+    </header>
+</div>
+
+<div class="login">
+    <!-- making a form without autocomplete -->
+    <form autocomplete="off" method="POST">
+        <!-- label and input for username -->
+        <label for="oldPass">Enter your password</label>
+        <input type="password" name="oldPass" placeholder="Your old password..." id="oldPass"/>
+
+        <!-- label and input for password -->
+        <label for="newUser">New username</label>
+        <input type="text" name="newUsername" placeholder="Your new password..." id="newUsername"/>
+        
+        <label for="confirmUser">Confirm your new username</label>
+        <input type="text" name="confirmUser" placeholder="Your new password..." id="confirmUser"/>
+        
+        <!-- a button with a the function login -->
+        <input type="submit" value="Login"/>
+    </form>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+{% endblock %}

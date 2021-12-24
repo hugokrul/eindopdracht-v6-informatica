@@ -1,0 +1,2 @@
+LogedIn = False
+logins = []

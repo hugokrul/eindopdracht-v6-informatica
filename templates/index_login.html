@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Inlog Pagina</title>
+{% endblock %}
+
+
+{% block body %}
+<div class="hero-image">
+    <header>
+        <div class="hero-text-login">
+            <h1 style="font-size:50px">INLOGGEN</h1 class="hero-text-h1">
+            <font style="font-size:inherit">Scroll naar beneden!</font>
+            <br>
+            <font style="font-size:inherit; color: red;">{{ error }}</font>
+        </div>
+    </header>
+</div>
+
+<!-- creating a login class -->
+<div class="login">
+    <!-- making a form without autocomplete -->
+    <form autocomplete="off" method="POST">
+        <!-- label and input for username -->
+        <label for="userName">Gebruikersnaam</label>
+        <input type="text" name="userName" placeholder="Jouw gebruikersnaam.." id="userName"/>
+
+        <!-- label and input for password -->
+        <label for="password">Wachtwoord</label>
+        <input type="password" name="password" placeholder="Jouw wachtwoord.." id="password"/>
+        
+        <!-- a button with a the function login -->
+        <input type="submit" value="Login"/>
+    </form>
+</div>
+
+{% endblock %}
