@@ -10,7 +10,7 @@ import re
 regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://oxytjvkirhftgl:8d773c2d8f59fb1c9fcc409db84ad317750d331e2ca092d6cf8488160e25d595@ec2-34-255-225-151.eu-west-1.compute.amazonaws.com:5432/d8665g81m4m6cd'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
