@@ -266,5 +266,5 @@ def index_signUp():
     return render_template('index_sign-up.html')
 
 
-# if __name__ == "__main__":
-#     app.run()
+if __name__ == "__main__":
+    app.run()
