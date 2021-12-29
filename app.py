@@ -27,7 +27,7 @@ class User(db.Model):
     ip_addr = db.Column(db.String(15), nullable=False)
 
     def __repr__(self):
-        return f"user('{self.id}',  '{self.username}', '{self.email}')"
+        return "user('{self.id}',  '{self.username}', '{self.email}')".format(self.id, self.username, self.email)
 
 def check(email): 
 	if(re.search(regex,email)): 
